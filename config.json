@@ -1,0 +1,6 @@
+{
+    "params":{
+        "local_uri":"mysql+mysqlconnector://root:@localhost/fashionstore",
+        "prod_uri":"mysql://root:@localhost/fashionstore"
+    }
+}

@@ -1,0 +1,455 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Women's Fashion a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+
+
+<!-- isko lagane se login right par kisak raha hai wese tou ye product card ka tha magar wo wese bhi chal raha hai -->
+<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Women's Fashion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!-- <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script> -->
+<!-- //for-mobile-apps -->
+<link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{url_for('static',filename='css/fasthover.css')}}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+<!-- //js -->
+<!-- countdown -->
+<link rel="stylesheet" href="{{url_for('static',filename='css/jquery.countdown.css')}}" />
+<!-- //countdown -->
+<!-- cart -->
+<script src="{{url_for('static',filename='js/simpleCart.min.js')}}"></script>
+<!-- cart -->
+<!-- for bootstrap working -->
+<script type="text/javascript" src="{{url_for('static',filename='js/bootstrap-3.1.1.min.js')}}"></script>
+<!-- //for bootstrap working -->
+<link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smooth-scrolling -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- //end-smooth-scrolling -->
+
+<!-- pagetopcdn -->
+<link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+
+<!-- pagetotop css -->
+<style>
+    .scroll-top-wrapper {
+        position: fixed;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        text-align: center;
+        z-index: 99999999;
+        background-color: #777777;
+        color: #eeeeee;
+        width: 50px;
+        height: 48px;
+        line-height: 48px;
+        right: 30px;
+        bottom: 30px;
+        padding-top: 2px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    .scroll-top-wrapper:hover {
+        background-color: #888888;
+    }
+    .scroll-top-wrapper.show {
+        visibility:visible;
+        cursor:pointer;
+        opacity: 1.0;
+    }
+    .scroll-top-wrapper i.fa {
+        line-height: inherit;
+    }
+    
+    </style>
+<!-- endcsspagetop -->
+</head>
+
+<div class="header">
+    <div class="container">
+        <div class="w3l_login">
+            <a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+        </div>
+        <div class="w3l_logo">
+            <h1><a href="index.html">Women's Fashion<span>For Fashion Lovers</span></a></h1>
+        </div>
+        <div class="search">
+            <input class="search_box" type="checkbox" id="search_box">
+            <label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+            <div class="search_form">
+                <form action="#" method="post">
+                    <input type="text" name="Search" placeholder="Search...">
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <div class="cart box_1">
+            <a href="checkout.html">
+                <div class="total">
+                <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
+                <img src="{{url_for('static',filename='images/bag.png')}}" alt="" />
+            </a>
+            <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+            <div class="clearfix"> </div>
+        </div>	
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div class="navigation">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header nav_2">
+                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div> 
+            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html" class="act">Home</a></li>	
+                    <!-- Mega Menu -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <ul class="multi-column-dropdown">
+                                        <h6>Clothing</h6>
+                                        <li><a href="dresses.html">Dresses<span>New</span></a></li>
+                                        <li><a href="sweaters.html">Sweaters</a></li>
+                                        <li><a href="skirts.html">Shorts & Skirts</a></li>
+                                        <li><a href="jeans.html">Jeans</a></li>
+                                        <li><a href="shirts.html">Shirts & Tops<span>New</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <ul class="multi-column-dropdown">
+                                        <h6>Ethnic Wear</h6>
+                                        <li><a href="salwars.html">Salwars</a></li>
+                                        <li><a href="sarees.html">Sarees<span>New</span></a></li>
+                                        <li><a href="products.html"><i>Summer Store</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <h6>Foot Wear</h6>
+                                        <li><a href="sandals.html">Flats</a></li>
+                                        <li><a href="sandals.html">Sandals</a></li>
+                                        <li><a href="sandals.html">Boots</a></li>
+                                        <li><a href="sandals.html">Heels</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w3ls_products_pos">
+                                        <h4>50%<i>Off/-</i></h4>
+                                        <img src="{{url_for('static',filename='images/1.jpg')}}" alt=" " class="img-responsive" />
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="short-codes.html">Short Codes</a></li>
+                    <li><a href="mail.html">Mail Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- //header -->
+
+<body>
+
+{% block body %} {% endblock %}
+
+
+<div class="scroll-top-wrapper ">
+    <span class="scroll-top-inner">
+        <i class="fa fa-2x fa-arrow-circle-up"></i>
+    </span>
+</div>
+
+<!-- is ki waja se image zoom kaam nahi kar raha -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<script> 
+
+$(function(){
+
+    $(document).on( 'scroll', function(){
+
+        if ($(window).scrollTop() > 100) {
+            $('.scroll-top-wrapper').addClass('show');
+        } else {
+            $('.scroll-top-wrapper').removeClass('show');
+        }
+    });
+});
+</script>
+<script>
+
+$(function(){
+
+    $(document).on( 'scroll', function(){
+
+        if ($(window).scrollTop() > 100) {
+            $('.scroll-top-wrapper').addClass('show');
+        } else {
+            $('.scroll-top-wrapper').removeClass('show');
+        }
+    });
+
+    $('.scroll-top-wrapper').on('click', scrollToTop);
+});
+
+function scrollToTop() {
+    verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+    element = $('body');
+    offset = element.offset();
+    offsetTop = offset.top;
+    $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+}
+</script>
+
+
+
+
+
+
+<!-- hovercard ki cheezein hain -->
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Poppins:300,700);
+
+    .snip1581 {
+        font-family: 'Poppins:400,700', Arial, sans-serif;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        margin: 8px;
+        min-width: 250px;
+        max-width: 310px;
+        height: 320px;
+        width: 100%;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: left;
+        font-size: 16px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .snip1581 * {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .snip1581 img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+
+    .snip1581 figcaption {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .snip1581 h3 {
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 3px 0;
+    }
+
+    .snip1581 .title1 {
+        font-weight: 700;
+    }
+
+    .snip1581 .title2 {
+        color: #a58e7c;
+        font-weight: 300;
+    }
+
+    .snip1581 .title3 {
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .snip1581 a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .snip1581:hover img,
+    .snip1581.hover img {
+        -webkit-transform: scale(1.3) rotate(5deg);
+        transform: scale(1.3) rotate(5deg);
+    }
+
+    /* Demo purposes only */
+    body {
+        /* background-color: #212121; */
+        text-align: center;
+    }
+</style>
+
+
+
+<script>/* Demo purposes only */
+    $(".hover").mouseleave(
+        function () {
+            $(this).removeClass("hover");
+        }
+    );
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+<!-- newsletter -->
+<div class="newsletter">
+    <div class="container">
+        <div class="col-md-6 w3agile_newsletter_left">
+            <h3>Newsletter</h3>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt.</p>
+        </div>
+        <div class="col-md-6 w3agile_newsletter_right">
+            <form action="#" method="post">
+                <input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+                <input type="submit" value="" />
+            </form>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!-- //newsletter -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="w3_footer_grids">
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Contact</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                <ul class="address">
+                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
+                    <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Information</h3>
+                <ul class="info"> 
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="mail.html">Contact Us</a></li>
+                    <li><a href="short-codes.html">Short Codes</a></li>
+                    <li><a href="faq.html">FAQ's</a></li>
+                    <li><a href="products.html">Special Products</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Category</h3>
+                <ul class="info"> 
+                    <li><a href="dresses.html">Dresses</a></li>
+                    <li><a href="sweaters.html">Sweaters</a></li>
+                    <li><a href="shirts.html">Shirts</a></li>
+                    <li><a href="sarees.html">Sarees</a></li>
+                    <li><a href="skirts.html">Shorts & Skirts</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Profile</h3>
+                <ul class="info"> 
+                    <li><a href="products.html">Summer Store</a></li>
+                    <li><a href="checkout.html">My Cart</a></li>
+                </ul>
+                <h4>Follow Us</h4>
+                <div class="agileits_social_button">
+                    <ul>
+                        <li><a href="#" class="facebook"> </a></li>
+                        <li><a href="#" class="twitter"> </a></li>
+                        <li><a href="#" class="google"> </a></li>
+                        <li><a href="#" class="pinterest"> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <div class="footer-copy1">
+            <div class="footer-copy-pos">
+                <a href="#home1" class="scroll"><img src="{{url_for('static',filename='images/arrow.png')}}" alt=" " class="img-responsive" /></a>
+            </div>
+        </div>
+        <div class="container">
+            <p>&copy; 2016 Women's Fashion. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+        </div>
+    </div>
+</div>
+<!-- //footer -->
+
+</html>
